@@ -1,6 +1,6 @@
 # 📂 New_Extract_GUID
 
-<h3 align="center">Cross-Platform iOS GUID Extractor</h3>
+### Cross-Platform iOS GUID Extractor
 
 <p align="center">
   A modern, automated, and lightweight utility designed to dynamically extract the system Shared SystemGroup GUID from connected iOS devices. Fully compliant across <b>Windows</b>, <b>macOS</b>, and <b>Linux</b> environments.

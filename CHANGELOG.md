@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated CMake build configuration with better summary output
 
 ### 📚 Documentation
+
 - Complete README rewrite with professional formatting
 - Added architecture overview section
 - Included comprehensive troubleshooting guide
@@ -34,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added legal disclaimer and license information
 
 ### 🏗️ Refactoring
+
 - Refreshed all log messages in bypass controller
 - Updated main.cpp with professional output formatting
 - Improved build system configuration
@@ -42,8 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2025-01-01
 
 ### Initial C++20 Rewrite
+
 - Complete reimplementation in modern C++20
-- Type-safe error handling with Result<T> monads
+- Type-safe error handling with `Result<T>` monads
 - RAII resource management
 - Thread-safe logging system
 - Native libimobiledevice integration

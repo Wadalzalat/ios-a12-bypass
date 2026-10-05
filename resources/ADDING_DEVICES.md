@@ -1,6 +1,6 @@
 # 📱 Adding Device Support Guide
 
-**Professional iOS A12+ Bypass Toolkit - Device Configuration**
+## Professional iOS A12+ Bypass Toolkit - Device Configuration
 
 ---
 

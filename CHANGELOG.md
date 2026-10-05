@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.1.0] - 2025-01-21
 
 ### ✨ Added
+
 - Modern professional branding with new ASCII banner
 - Enhanced help text with emoji indicators and better organization
 - Comprehensive version display with technology stack details
@@ -17,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved error messages throughout codebase
 
 ### 🔧 Changed
+
 - Updated all user-facing strings and log messages
 - Modernized CLI interface with better formatting
 - Enhanced progress indicators and status messages

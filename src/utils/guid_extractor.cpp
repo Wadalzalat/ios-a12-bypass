@@ -14,10 +14,14 @@
 namespace a12bypass {
 
 const std::regex GuidExtractor::guid_pattern{
-    "[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}"
+    "[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}"
 };
 
 bool GuidExtractor::validate_guid(std::string_view guid) {
+    if (guid.size() != 36) {
+        return false;
+    }
+
     std::string guid_str{guid};
     if (!std::regex_match(guid_str, guid_pattern)) {
         return false;
@@ -48,7 +52,11 @@ std::optional<std::string> GuidExtractor::extract_from_line(std::string_view lin
     std::string line_str{line};
     std::smatch match;
     if (std::regex_search(line_str, match, guid_pattern)) {
-        std::string guid = normalize(match[0].str());
+        const std::string guid = normalize(match[0].str());
+        if (!validate_guid(guid)) {
+            return std::nullopt;
+        }
+
         LOG_DEBUG("Found GUID candidate: ", guid);
         return guid;
     }

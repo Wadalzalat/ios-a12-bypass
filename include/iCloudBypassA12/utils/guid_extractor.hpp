@@ -37,7 +37,7 @@ public:
     [[nodiscard]] static std::string normalize(std::string_view guid);
 
 private:
-    /// UUID regex pattern
+    /// UUID v4 regex pattern
     static const std::regex guid_pattern;
     
     /// Target filename in syslogs
